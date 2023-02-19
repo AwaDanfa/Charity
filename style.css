@@ -1,0 +1,287 @@
+/************************************************/
+/************* UNIVERSAL ELEMENTS ***************/
+/************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/* Reset the space of the webpage */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* These styles apply to almost all elements unless another rule set says otherwise */
+body {
+ height: 100%;
+ box-sizing: border-box;
+ background-color: #ffffff;          /* Change the background color */
+ font-family: 'Varela Round', sans-serif;
+
+ /* font-family: "Roboto", sans-serif;  Change the font */
+ font-size: 20px;                    /* Change the font size*/
+ line-height: 1.5em;                 /* Change the line height size*/
+ color: white;                       /* Change the font color*/
+
+}
+
+header {
+ padding-top: 50px;      /* Use padding to give elements size */
+ padding-left: 30%;
+ padding-right: 30%;
+ margin: 1px;            /* Use margins to separate elements */
+
+}
+
+/* These rules apply to the main content of the page below the header */
+main { 
+ padding-top: 25px;      
+ padding-bottom: 50px;
+ padding-left: 100px;
+ padding-right: 100px;
+ margin: 1px;            
+ 
+}
+
+/* Heading styles */
+h1 {
+ font-family: "Roboto Mono", sans-serif;
+ font-size: 50px;
+ text-align: center;
+ color: #99007C;
+ line-height: 60px;
+ letter-spacing: 5px;
+
+ margin: 2px;
+}
+
+h2 {
+ font-family: "Roboto Mono", sans-serif;
+ font-size: 35px;
+ text-align: center;
+ color: #99007C;
+ line-height: 1.3em;
+ letter-spacing: 3px;
+ 
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+
+h3 {
+ font-family: "Roboto Mono", sans-serif;
+ font-size: 25px;
+ text-align: center;
+ color: #0D38D3;
+ line-height: 1.3em;
+ 
+ padding-bottom: 15px;
+}
+
+/* Paragraph style */
+p { 
+ font-family:'Varela Round', sans-serif;
+ font-size: 20px;
+ color: black;
+ line-height: 1.5em;
+ text-align: center;
+}
+
+/* Link style */
+a {
+ color: #43d6b9ff;
+ text-decoration: none;
+}
+
+
+/************************************************/
+/*************** CSS FOR NAV BAR ****************/
+/************************************************/  
+
+/* Unorder list elements */
+ul.nav-bar {
+ list-style-type: none;        /* No bullets */
+ overflow: hidden;
+ 
+ background-color: #3396ad;
+ border-style: solid;
+ border-color: #3396ad;
+}
+
+/* List elements */
+li.nav-item {
+ display: inline;        /* Let's us position li elements next to each other on the same line */
+ float: right;           /* Position to the right */
+ 
+ padding: 5px;
+}
+
+/* List elements with a link or <a> tag */
+li.nav-item a {   
+ font-size: 15px;
+ color: #99007C;
+ 
+ padding-top: 14px;
+ padding-bottom: 14px;
+ padding-left: 16px;
+ padding-right: 16px;
+ text-decoration: none;
+ text-transform: uppercase;
+ font-weight: bold;
+}
+
+/* List elements with a link or <a> tag when you hover over them */
+li.nav-item a:hover {
+ background-color: black;
+ color: white;
+}
+
+/************************************************/
+/******************* HOMEPAGE *******************/
+/************************************************/
+
+/* Subtitle */
+#subtitle{
+ text-align: center;
+ font-size: 25px;
+ 
+ padding-top: 20px;
+}
+
+/* Images */
+.flex-container {      /* Create the flex container */
+ display: flex;       /* Enable flexbox properties! This property defines the flexbox container */
+ flex-direction: row; /* Set your flex items which direction to go - if it should display left to right in a row or top to bottom in a column */
+ flex-wrap: nowrap;   /* Tell your elements to fit all on one line with nowrap or to fit onto more than one line with wrap */
+} 
+
+
+.flex-item {           /* Style the flex items */
+ flex-basis: 100%;    /* Set the width of each item */
+ margin: 1%;          /* Put a little bit of space around each flex item */
+}
+
+img {
+ display: block;      
+ width: 90%;          /* Sets width of the image - change to 100% */
+ height: auto;        /* Sets height of the image */
+ margin-left: auto;
+ margin-right: auto;
+ 
+ border-style: solid;
+ border-color: #bc9ed6;
+ border-width: 8px;
+ border-radius: 5px;
+}
+
+/* Image Attributions (see under the middle image on the homepage) */
+.attribution {
+ font-size: 14px;
+ text-align: center;
+ 
+ padding-top: 10px;
+}
+
+
+/************************************************/
+/***************** TAKE ACTION ******************/
+/************************************************/
+
+/* Checklist */
+.checklist {
+ background-color: white;
+ color: #0D38D3;
+ padding: 50px;
+ 
+ width: 40%;
+ margin-left:auto;
+ margin-right:auto;
+ margin-top: 50px;
+ 
+ border-style: solid;
+ border-color: #bc9ed6;
+ border-width: 8px;
+ border-radius: 10px;
+ 
+}
+
+/* Unordered List Elements */
+ul {
+ list-style-type: none;
+}
+
+/* List Elements */
+li {
+ padding: 5px;
+}
+
+/* CAT button */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+
+}
+
+button {
+  background-color:#3396ad;
+border-radius:28px;
+border:3px solid #3396ad;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial;
+font-size:17px;
+padding:16px 31px;
+text-decoration:none;
+text-shadow:0px 1px 0px #3396ad;
+margin-top: 20px;
+
+
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+
+/* Footer */
+footer {
+  background-color: #99007C;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+}
+/************************************************/
+/******************** ABOUT *********************/
+/************************************************/
+
+/* This image was way too big, so I created a class to resize it */
+img.resize {
+ width: 50%;
+ display: block;
+ margin-top: 50px;
+ margin-bottom: 50px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+/******************************************************/
+/********** CHANGE CSS BASED ON SCREEN SIZE ***********/
+/******************************************************/
+
+/* Breakpoint 1: For screens that are 850 pixels wide or less*/ 
+@media screen and (max-width: 850px) {
+ .flex-container {
+   flex-wrap: wrap; /* Allow images to wrap onto more than one line on smaller screens */
+ }
+ 
+ /* We increased the width of of the header and main elements by decreasing the left and right padding so the text displays better */
+ header, main {
+ padding-left: 50px;
+ padding-right: 50px;
+ }
+ 
+ 
+}
+
+
+/* Breakpoint 2: You try! */
